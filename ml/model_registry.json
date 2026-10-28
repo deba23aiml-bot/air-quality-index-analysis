@@ -1,0 +1,19 @@
+{
+    "model_name": "PM25_RandomForest",
+    "model_version": "2.0",
+    "model_type": "RandomForestRegressor",
+    "target": "PM2.5",
+    "model_file": "pm25_model_v2.pkl",
+    "status": "Production",
+    "features": [
+        "temperature_2m",
+        "relative_humidity_2m",
+        "pressure_msl",
+        "precipitation",
+        "wind_speed_10m",
+        "pm25_lag_1",
+        "pm25_lag_3",
+        "pm25_rolling_mean_3",
+        "pm25_rolling_mean_6"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "model_name": "PM25_RandomForest",
+    "current_version": "2.0",
+    "retraining_triggers": {
+        "rmse_degradation_percent": 20,
+        "mae_degradation_percent": 20,
+        "feature_drift_percent": 20,
+        "api_failure_rate_percent": 10
+    },
+    "retraining_process": [
+        "Collect new air quality and weather data",
+        "Run the feature pipeline",
+        "Train regression and classification models",
+        "Evaluate using chronological validation and test data",
+        "Compare the candidate model with the production model",
+        "Register a new model version if performance improves",
+        "Deploy the new version and continue monitoring"
+    ],
+    "deployment_rule": "Deploy only when the candidate model performs better than the current production model."
+}

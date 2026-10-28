@@ -1,0 +1,21 @@
+{
+    "model_name": "PM2.5 Random Forest Regressor",
+    "model_version": "1.0",
+    "training_date": "2026-10-03",
+    "target": "value",
+    "features": [
+        "temperature_2m",
+        "relative_humidity_2m",
+        "pressure_msl",
+        "precipitation",
+        "wind_speed_10m"
+    ],
+    "training_rows": 789,
+    "testing_rows": 198,
+    "metrics": {
+        "MAE": 38.04,
+        "RMSE": 49.61,
+        "R2": 0.55
+    },
+    "model_file": "pm25_model.pkl"
+}
